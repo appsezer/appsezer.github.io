@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahne Var Mı? - Jenerik Sonrası Sahne Rehberi</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --accent: #ffd700;
+            --text-main: #ffffff;
+            --text-muted: #b0b0b0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 40px 20px;
+            background: linear-gradient(180deg, #1f1f1f 0%, var(--bg-color) 100%);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+            letter-spacing: 1px;
+        }
+        h1 span {
+            color: var(--accent);
+        }
+        p.subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+            color: var(--text-muted);
+        }
+        ul li::before {
+            content: "🎬";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #0d0d0d;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .version-badge {
+            display: inline-block;
+            background: rgba(255,215,0,0.1);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-top: 15px;
+            border: 1px solid rgba(255,215,0,0.3);
+        }
+        .privacy-box p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sahne Var Mı? <span>/ Any Post-Credits?</span></h1>
+        <p class="subtitle">Sinema salonunda jenerik akarken koltukta mı kalmalı yoksa çıkmalı mı? Anında öğrenin.</p>
+        <div class="version-badge">v1.9</div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Uygulama Hakkında</h2>
+            <p style="color: var(--text-muted);">
+                "Sahne Var Mı?", sinemaseverlerin film bittikten sonra jenerik akarken salonda bekleyip beklememesine karar vermesini sağlayan hızlı, reklamsız ve tamamen ücretsiz bir mobil rehberdir. Gelişmiş sinema veri tabanı altyapısıyla filmlerde jenerik ortası (mid-credits) veya jenerik sonrası (post-credits) sahne olup olmadığını saniyeler içinde raporlar.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Öne Çıkan Özellikler</h2>
+            <ul>
+                <li><strong>Hızlı ve Net Sonuçlar:</strong> Karmaşık menüler yok, arat ve anında öğren.</li>
+                <li><strong>Detaylı Zamanlama:</strong> Sahnelerin jenerik akarken mi yoksa en sonda mı olduğunu gösterir.</li>
+                <li><strong>Çift Dil Desteği:</strong> Türkçe ve İngilizce arayüz geçişi.</li>
+                <li><strong>Reklamsız ve Güvenli:</strong> Tamamen kişisel kullanım odaklı, dikkat dağıtmayan arayüz.</li>
+            </ul>
+        </div>
+
+        <div class="card privacy-box">
+            <h2>Gizlilik Politikası / Privacy Policy</h2>
+            <p>Bu uygulama ("Sahne Var Mı?"), kullanıcılarından herhangi bir kişisel veri toplamaz, kaydetmez veya üçüncü taraflarla paylaşmaz.</p>
+            <p>Uygulama içerisinde yapılan film aramaları yalnızca anlık olarak film veri tabanı üzerinden sonuç getirmek amacıyla işlenir.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sahne Var Mı? Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>

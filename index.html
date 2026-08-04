@@ -84,16 +84,28 @@ footer { text-align: center; padding: 30px; background-color: #0d0d0d; color: va
 </div>
 
 <!-- Gizli Sayaç (Sadece Appsezer görebilir) -->
-<div style="text-align: center; margin-bottom: 10px;">
+<!-- <div style="text-align: center; margin-bottom: 10px;">
     <a href="https://komarev.com/ghpvc/?username=appsezer_web&label=Goruntulenme&color=7c4dff" target="_blank" style="text-decoration: none; color: #1e1e1e; font-size: 10px;">
         .
         <img src="https://komarev.com/ghpvc/?username=appsezer_web" alt="" style="width: 1px; height: 1px; opacity: 0.01;">
     </a>
 </div>
-    
+    -->
 <footer>
     <p>© 2026 Film Sonu App. Tüm hakları saklıdır. appsezer</p>
 </footer>
+
+    <!-- Düz Metin Sayaç (Arka planla aynı renk) -->
+<div id="gizli-sayac" style="text-align: center; color: #121212; font-size: 14px; margin-bottom: 20px;"></div>
+
+<script>
+  // Sayfaya her girildiğinde sayıyı 1 artırır ve yukarıdaki div'in içine düz metin olarak yazar.
+  fetch('https://api.counterapi.dev/v1/appsezer/websitesi/up')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('gizli-sayac').innerText = data.count;
+    });
+</script>
 
 </body>
 </html>

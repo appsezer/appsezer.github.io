@@ -92,13 +92,14 @@ footer { text-align: center; padding: 30px; background-color: #0d0d0d; color: va
 -->
     
 <footer>
-    <p>© 2026 Post Credit App. All rights reserved. appsezer</p>
+    <p>© 2026 Post Credit App. All rights reserved. appsezer . (<span id="visitor-count">...</span>)</p>
 </footer>
 
 <!-- Düz Metin Sayaç (Arka planla aynı renk) -->
 <div id="gizli-sayac" style="text-align: center; color: #121212; font-size: 14px; margin-bottom: 20px;"></div>
 
-<script>
+<!--
+    <script>
   // Sayfaya her girildiğinde sayıyı 1 artırır ve yukarıdaki div'in içine düz metin olarak yazar.
   fetch('https://api.counterapi.dev/v1/appsezer/websitesi/up')
     .then(response => response.json())
@@ -106,6 +107,17 @@ footer { text-align: center; padding: 30px; background-color: #0d0d0d; color: va
       document.getElementById('gizli-sayac').innerText = data.count;
     });
 </script>
+    -->
+
+    <script>
+        //sayaç gibi bir şeyler
+  fetch('https://api.counterapi.dev/v1/appsezer/websitesi/up')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitor-count').innerText = data.count;
+    });
+</script>
+    
     
 </body>
 </html>

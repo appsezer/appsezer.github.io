@@ -3,10 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Any Post-Credits? - Scene Guide</title>
+<title>Post-Credit - Scene Guide After Credits</title>
 <style>
-/* CSS TR versiyonu ile tamamen aynı */
-:root { --bg-color: #121212; --card-bg: #1e1e1e; --accent: #ffc107; --text-main: #ffffff; --text-muted: #b0b0b0; }
+:root {
+--bg-color: #121212;
+--card-bg: #1e1e1e;
+--accent: #ffc107;
+--badge-purple: #7c4dff;
+--text-main: #ffffff;
+--text-muted: #b0b0b0;
+}
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
 .header-top { padding: 20px; display: flex; justify-content: flex-end; background-color: #000000; }
@@ -15,7 +21,7 @@ body { background-color: var(--bg-color); color: var(--text-main); line-height: 
 .active-lang { background-color: var(--accent); color: #000; }
 .hero { text-align: center; padding: 40px 20px 20px 20px; }
 .banner-img { width: 100%; max-width: 800px; border-radius: 12px; box-shadow: 0 10px 30px rgba(255, 193, 7, 0.15); margin-bottom: 20px; }
-.download-btn { display: inline-block; background-color: var(--accent); color: #000; padding: 12px 25px; font-size: 1.1rem; font-weight: bold; text-decoration: none; border-radius: 30px; margin: 20px 0; transition: 0.3s; }
+.download-btn { display: inline-block; background-color: var(--accent); color: #000; padding: 12px 25px; font-size: 1.1rem; font-weight: bold; text-decoration: none; border-radius: 30px; margin: 15px 0; transition: 0.3s; }
 .download-btn:hover { background-color: #ffca28; transform: scale(1.05); }
 .container { max-width: 800px; margin: 0 auto; padding: 20px; }
 .card { background-color: var(--card-bg); border-radius: 16px; padding: 30px; margin-bottom: 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.05); }
@@ -23,7 +29,9 @@ h2 { font-size: 1.5rem; margin-bottom: 15px; color: var(--accent); }
 ul { list-style-type: none; }
 ul li { margin-bottom: 12px; position: relative; padding-left: 25px; color: var(--text-muted); }
 ul li::before { content: "🎬"; position: absolute; left: 0; top: 0; }
-.version-badge { display: inline-block; background: rgba(255,193,7,0.1); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; margin-bottom: 20px; border: 1px solid rgba(255,193,7,0.3); }
+.version-badge { display: inline-block; background: rgba(124, 77, 255, 0.15); color: #b388ff; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; margin-bottom: 15px; border: 1px solid rgba(124, 77, 255, 0.4); }
+.support-box { background: linear-gradient(135deg, #1e1e1e 0%, #251d3a 100%); border: 1px solid rgba(124, 77, 255, 0.3); text-align: center; }
+.support-btn { display: inline-block; background-color: var(--badge-purple); color: #fff; padding: 10px 20px; font-size: 0.95rem; font-weight: bold; text-decoration: none; border-radius: 20px; margin-top: 15px; transition: 0.3s; opacity: 0.8; cursor: not-allowed; }
 footer { text-align: center; padding: 30px; background-color: #0d0d0d; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); }
 </style>
 </head>
@@ -36,7 +44,7 @@ footer { text-align: center; padding: 30px; background-color: #0d0d0d; color: va
 
 <div class="hero">
     <img src="afis1.jpg" alt="Post Credit Banner" class="banner-img"><br>
-    <div class="version-badge">v1.3.4 Early Access</div><br>
+    <div class="version-badge">v1.3.5 Early Access &bull; Coming Soon</div><br>
     <a href="#" class="download-btn">Download on Google Play (Soon)</a>
 </div>
 
@@ -44,7 +52,7 @@ footer { text-align: center; padding: 30px; background-color: #0d0d0d; color: va
     <div class="card">
         <h2>About the App</h2>
         <p style="color: var(--text-muted);">
-        "Any Post-Credits?" is a fast, ad-free, and completely free mobile guide designed for moviegoers to decide whether to wait in the theater after the movie ends. Powered by an advanced movie database (TMDB), it reports in seconds whether there is a mid-credits or post-credits scene.
+        "Post-Credit" is a fast, ad-free, and completely free mobile guide designed for moviegoers to decide whether to wait in the theater after the movie ends. Powered by an advanced movie database (TMDB), it reports in seconds whether there is a mid-credits or post-credits scene.
         </p>
     </div>
 
@@ -52,15 +60,24 @@ footer { text-align: center; padding: 30px; background-color: #0d0d0d; color: va
         <h2>Key Features</h2>
         <ul>
             <li><strong>Fast and Clear Results:</strong> No complex menus, just search and know instantly.</li>
-            <li><strong>Detailed Timing:</strong> Shows whether scenes are mid-credits or at the very end.</li>
+            <li><strong>Waiting Guide:</strong> Instantly shows whether you need to stay in your seat for the credits.</li>
             <li><strong>Dual Language Support:</strong> Seamlessly switch between Turkish and English.</li>
             <li><strong>Ad-Free and Secure:</strong> Focused purely on personal use with a distraction-free interface.</li>
         </ul>
     </div>
 
+    <!-- Buy Me a Coffee / Support Box -->
+    <div class="card support-box">
+        <h2>Buy Me a Coffee ☕</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 10px;">
+        If you like the app, you can support this indie project by buying a small coffee.
+        </p>
+        <div class="support-btn">Coming Soon</div>
+    </div>
+
     <div class="card">
-        <h2>Gizlilik Politikası / Privacy Policy</h2>
-        <p style="color: var(--text-muted); margin-bottom: 10px;">This application ("Any Post-Credits?") does not collect, record, or share any personal data from its users with third parties.</p>
+        <h2>Privacy Policy</h2>
+        <p style="color: var(--text-muted); margin-bottom: 10px;">This application ("Post-Credit") does not collect, record, or share any personal data from its users with third parties.</p>
         <p style="color: var(--text-muted);">Movie searches made within the application are processed only instantly to fetch results from the movie database.</p>
     </div>
 </div>
